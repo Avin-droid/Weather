@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <style>
+
+            body 
+            {
+                background:url('https://media.istockphoto.com/id/157713818/photo/xxl-desert-road-thunderstorm.jpg?s=2048x2048&w=is&k=20&c=Kb1mOS4egMeLBJVA3d_v5ZBYlEfJjV5dqExtknu8G0c=');
+                color: black;
+                text-align: center;
+                padding: 20px;
+            }
+
+            h1 
+            {
+                color: black;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: xx-large;
+            }
+
+            h1:hover
+            {
+                color:red;
+            }
+
+            table 
+            {
+                width: 40%;
+                margin: 20px auto;
+                border-collapse: collapse;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                background-color: whitesmoke;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            th, td 
+            {
+                padding: 15px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                font-size: 16px;
+            }
+
+            th 
+            {
+                background-color: rgba(255, 0, 0, 0.273);
+                color: black;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: bold;
+            }
+
+            td 
+            {
+                color: black;
+                font-size:medium;
+                font-weight: bold;
+                
+            }
+
+            tr:hover 
+            {
+                background-color: silver;
+            }
+
+            a 
+            {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: black;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s ease;
+            }
+
+            a:hover 
+            {
+                background-color: blue;
+            }
+
+        </style>
+  </head>
+
+  <body>
+        
+        
+        <h1>Weather Report</h1>
+        <table border="2" cellpadding="10">
+
+
+            <tr>
+                <th>Weather-ID</th>
+                <td><%=weather.weather_id %></td>
+            </tr>
+
+
+            <tr>
+                <th>Country</th>
+                <td><%=weather.country%></td>
+            </tr>
+
+            <tr>
+                <th>State</th>
+                <td><%=weather.state %></td>
+            </tr>
+
+            <tr>
+                <th>City</th>
+                <td><%=weather.city %></td>
+            </tr>
+
+            <tr>
+                <th>Latitude</th>
+                <td><%=weather.lat %></td>
+            </tr>
+
+            <tr>
+                <th>Longitude</th>
+                <td><%=weather.lon %></td>
+            </tr>
+            
+            <tr>
+                <th>Current Temperature</th>
+                <td><%=weather.temp %>&deg;C</td>
+            </tr>
+
+            <tr>
+                <th>Feels Like Temperature</th>
+                <td><%=weather.feels_like %>&deg;C</td>
+            </tr>
+
+            <tr>
+                <th>Minimum Temperature</th>
+                <td><%=weather.temp_min %>&deg;C</td>
+            </tr>
+
+            <tr>
+                <th>Maximum Temperature</th>
+                <td><%=weather.temp_max %>&deg;C</td>
+            </tr>
+
+            <tr>
+                <th>Weather Description</th>
+                <td><%=weather.description %></td>
+            </tr>
+
+            <tr>
+                <th>Humidity</th>
+                <td><%=weather.humidity %>%</td>
+            </tr>
+
+            <tr>
+                <th>Pressure</th>
+                <td><%=weather.pressure %>Pa</td>
+            </tr>
+        </table>
+
+        <h2><a href="/">Back To Home Page</a></h2>
+        
+    </body>
+</html>
